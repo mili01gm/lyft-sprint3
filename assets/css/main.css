@@ -2,6 +2,7 @@ html {
 font-family: 'Montserrat', sans-serif;
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 }
 .upper-text {
   text-transform: uppercase;
@@ -88,23 +89,75 @@ header {
 
 /*Section VIDEOS*/
 #video1, #video2, #video3 {
+  position: relative;
+  display: block;
   width: 100%;
-  height: 500px;
+  height: 550px;
   max-height: 100%;
-  margin: 0;
-  padding: 0;
 }
 #video1 article, #video2 article, #video3 article,
 #video1 iframe, #video2 iframe, #video3 iframe {
+  position: absolute;
   display: inline-block;
 }
+#video1 article, #video2 article, #video3 article {
+  width: 33%;
+  margin-left: 15px;
+}
 #video1 iframe, #video2 iframe, #video3 iframe {
-  width: 70%;
-  height: 500px;
+  width: 65%;
+  height: 550px;
 }
 #video1 iframe, #video3 iframe {
-  float: right;
+  right: 0;
 }
 #video2 iframe {
-  float: left;
+  left: 0;
+}
+#video2 article {
+  right: 0;
+}
+#videos article h6 {
+margin: 30px 0 10px 0;
+}
+#videos article h2 {
+  font-size: 2.5vw;
+  font-weight: 400;
+}
+#videos article p {
+  text-align: justify;
+  width: 80%;
+  font-size: 1.2vw;
+  font-weight: lighter;
+}
+/*End VIDEOS*/
+
+
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  background-color: #333447;
+  bottom: 0;
+  height: 400px;
+}
+footer h5 {
+  color: white;
+}
+footer div {
+  display: inline-block;
+  margin-top: 40px;
+}
+#footer-listpartner, #footer-listlearn, #footer-listlogin {
+  margin: 3%;
+}
+#footer-stores {
+  float: right;
+  margin-right: 50px;
+}
+#footer-stores img {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  margin: 5%;
 }
