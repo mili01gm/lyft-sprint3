@@ -54,7 +54,7 @@ box-sizing: border-box;
   outline: none;
 }
 #nav-bar li button #btn-login {
-  border: 0.5px solid lightgray;
+  border: 0.5px solid white;
 }
 #btn-signup{
   opacity: 0;
@@ -113,6 +113,31 @@ header {
 }
 .on-signup {
   display: none;
+}
+#form-container button {
+  background-color: #FF00BF;
+  color: white;
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3vw;
+  font-weight: 600;
+  margin: 10px 0;
+}
+#form-container .signup a {
+  color: #728099;
+  margin-left: 20px;
+  font-size: 1.5vw;
+  font-weight: lighter;
+}
+#form-container p {
+  font-size: 0.7vw;
+  color: #728099;
+}
+#form-container p a {
+  text-decoration: none;
+  color: #FF00BF;
 }
 
 

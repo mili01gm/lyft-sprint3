@@ -17,7 +17,9 @@ window.addEventListener("scroll", function () {
       navbar.removeAttribute("class","menu-scroll");
       logo.setAttribute("src","assets/img/logo-white.png");
       botonSign.style.opacity = "0";
-      opciones.style.color = "white";
+      for(var i=0; i<opciones.length-1; i++){
+        opciones[i].style.color = "white";
+      }
     }
 },false);
 
