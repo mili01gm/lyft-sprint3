@@ -1,3 +1,4 @@
+//NavBar changes on scrolling
 window.addEventListener("scroll", function () {
   var navbar = document.getElementById("menu");
   var botonSign = document.getElementById("btn-signup");
@@ -19,3 +20,15 @@ window.addEventListener("scroll", function () {
       opciones.style.color = "white";
     }
 },false);
+
+//Inputs functions
+var phone = document.getElementById("phone");
+var name = document.getElementById("name");
+var email = document.getElementById("email");
+var city = document.getElementById("city");
+
+//displays complete form on click on phone input
+phone.addEventListener("click",function(){
+    document.getElementById("on-signup").style.display = "block";
+});
+//
