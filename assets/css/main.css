@@ -55,9 +55,10 @@ padding: 0;
 #nav-bar li button #btn-login {
   border: 0.5px solid lightgray;
 }
-#nav-bar li button #btn-signup{
-  visibility: hidden;
+#btn-signup{
+  opacity: 0;
   border: 0.5px solid #FF00BF;
+  transition: 0.7s;
 }
 /*END Nav bar*/
 

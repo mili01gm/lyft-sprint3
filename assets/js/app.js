@@ -7,7 +7,7 @@ window.addEventListener("scroll", function () {
     if(scroll>50){
       navbar.setAttribute("class","menu-scroll");
       logo.setAttribute("src","assets/img/logo-pink.png");
-      botonSign.style.visibility = "visible";
+      botonSign.style.opacity = "1";
       botonSign.style.color = "#FF00BF";
       for(var i=0; i<opciones.length-1; i++){
         opciones[i].style.color = "gray";
@@ -15,7 +15,7 @@ window.addEventListener("scroll", function () {
     } else {
       navbar.removeAttribute("class","menu-scroll");
       logo.setAttribute("src","assets/img/logo-white.png");
-      botonSign.style.visibility = "hidden";
+      botonSign.style.opacity = "0";
       opciones.style.color = "white";
     }
 },false);
