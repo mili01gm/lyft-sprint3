@@ -28,11 +28,23 @@
       <h1 class="upper-text">Turn miles into money</h1>
       <h5 class="upper-text">sign up to drive with lyft.</h5>
       <form class="signup" action="index.html" method="post">
-        <input type="tel" id="phone" class="form-field" pattern="\d{7,9}"placeholder="Phone number" required>
+        <div>
+          <input type="tel" id="phone" class="form-field" pattern="\d{7,9}"placeholder="Phone number" title="Only numbers." required>
+          <img src="assets/img/error.png" alt="error">
+        </div>
         <div class="on-signup" id="on-signup">
-          <input type="text" id="name" class="form-field" pattern="([A-Z]{1}[a-zñá-ú]*([\s]?))+" placeholder="Name" required>
-          <input type="email" id="email" class="form-field" placeholder="Email" required>
-          <input type="text" id="city" class="form-field" placeholder="City" required>
+          <div>
+            <input type="text" id="name" class="form-field" pattern="([A-Z]{1}[a-zñá-ú]*([\s]?))+" placeholder="Name" title="Only letters and uppercase first letter." required>
+            <img src="assets/img/error.png" alt="error">
+          </div>
+          <div>
+            <input type="email" id="email" class="form-field" placeholder="Email" title="Only complete emails. Please check once again." required>
+            <img src="assets/img/error.png" alt="error">
+          </div>
+          <div>
+            <input type="text" id="city" class="form-field" pattern="([A-Z]{1}[a-zñá-ú][´|-]?*([\s]?))+" placeholder="City" title="Uppercase first letter." required>
+            <img src="assets/img/error.png" alt="error">
+          </div>
         </div>
         <button>Become a driver</button>
         <a href="#">Sign up to ride</a>

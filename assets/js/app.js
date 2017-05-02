@@ -33,4 +33,3 @@ var city = document.getElementById("city");
 phone.addEventListener("click",function(){
     document.getElementById("on-signup").style.display = "block";
 });
-//

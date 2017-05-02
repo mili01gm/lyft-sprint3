@@ -19,6 +19,7 @@ box-sizing: border-box;
   padding: 24px 0 8px 0;
   transition: all 0.3s ease;
 }
+/*For the menu to change color*/
 .menu-scroll {
   background-color: white;
   color: gray;
@@ -32,9 +33,14 @@ box-sizing: border-box;
 #menu #nav-bar {
   float: right;
   margin-right: 3%;
+  margin-top: 0;
+}
+#nav-bar ul {
+  margin-top: 0;
 }
 #nav-bar li {
   display: inline-block;
+  margin-top: 0;
 }
 #nav-bar li a,
 #nav-bar li button {
@@ -99,18 +105,24 @@ header {
   font-size: 1.2vw;
 }
 #form-container input {
-  display: block;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #352384;
-  width: 85%;
+  width: 80%;
   height: 50px;
   font-size: 1.3vw;
   margin: 2% 0;
 }
 #form-container input:focus {
   outline: none;
+}
+.error-input {
+  border-bottom: 0.5px solid #FF00BF;
+}
+#form-container img[alt="error"]{
+  width: 30px;
+  display: none;
 }
 .on-signup {
   display: none;
@@ -152,7 +164,7 @@ header {
   color: white;
   height: 700px;
   max-height: 100%;
-  margin-top: 7%;
+  margin-top: 10%;
 }
 #info #info-text {
   width: 450px;
@@ -174,7 +186,7 @@ header {
 #info img {
   float: right;
   width: 500px;
-  height: 550px;
+  height: 520px;
   margin-right: 10%;
 }
 
