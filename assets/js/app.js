@@ -34,10 +34,6 @@ phone.addEventListener("click",function(){
     document.getElementById("on-signup").style.display = "block";
 });
 
-var phoneBlur = function(){
-
-}
-
 phone.onblur = function(){
   if(phone.value==""){
     phone.nextElementSibling.style.display = "block";
@@ -50,19 +46,21 @@ phone.onblur = function(){
 
 name.onblur = function(){
   var regex = "([A-Z]{1}[a-zñá-ú]*([\s]?))+";
-  if(name.value==""){
+  if(name.value.length==0){
     name.nextElementSibling.style.display = "block";
   }
-  if(!regex.text(name.value)){
+  if(regex.text(name.value)){
     name.nextElementSibling.style.display = "block";
   }
   else {name.nextElementSibling.style.display = "none";}
 }
+
 email.onblur = function(){
   if(email.value==""){
     email.nextElementSibling.style.display = "block";
   }
 }
+
 city.onblur = function(){
   var regex2 = "([A-Z]{1}[a-zñá-ú][´|-]?*([\s]?))+";
   if(city.value==""){
