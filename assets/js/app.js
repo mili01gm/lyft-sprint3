@@ -49,9 +49,14 @@ phone.onblur = function(){
 }
 
 name.onblur = function(){
+  var regex = "([A-Z]{1}[a-zñá-ú]*([\s]?))+";
   if(name.value==""){
     name.nextElementSibling.style.display = "block";
   }
+  if(!regex.text(name.value)){
+    name.nextElementSibling.style.display = "block";
+  }
+  else {name.nextElementSibling.style.display = "none";}
 }
 email.onblur = function(){
   if(email.value==""){
@@ -59,7 +64,12 @@ email.onblur = function(){
   }
 }
 city.onblur = function(){
+  var regex2 = "([A-Z]{1}[a-zñá-ú][´|-]?*([\s]?))+";
   if(city.value==""){
     city.nextElementSibling.style.display = "block";
   }
+  if(!regex2.test(city.value)){
+    city.nextElementSibling.style.display = "block";
+  }
+  else {city.nextElementSibling.style.display = "none";}
 }
