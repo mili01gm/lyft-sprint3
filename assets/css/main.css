@@ -1,0 +1,86 @@
+html {
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+padding: 0;
+}
+.upper-text {
+  text-transform: uppercase;
+}
+
+/*Nav bar*/
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 113px;
+  z-index: 1000;
+  padding: 24px 0 8px 0;
+  transition: all 0.7s ease;
+}
+.menu-scroll {
+  background-color: white;
+  color: gray;
+}
+#menu #logo {
+  width: 70px;
+  max-width: 100%;
+  margin-top: 2%;
+  margin-left: 7%;
+}
+#menu #nav-bar {
+  float: right;
+  margin-right: 3%;
+}
+#nav-bar li {
+  display: inline-block;
+}
+#nav-bar li a,
+#nav-bar li button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  font-size: 1.5vw;
+  font-weight: 300;
+  margin: 15px;
+}
+#nav-bar li button {
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+}
+#nav-bar li button:focus {
+  outline: none;
+}
+#nav-bar li button #btn-login {
+  border: 0.5px solid lightgray;
+}
+#nav-bar li button #btn-signup{
+  visibility: hidden;
+  border: 0.5px solid #FF00BF;
+}
+/*END Nav bar*/
+
+/*Header video and form*/
+header {
+  position: relative;
+}
+#suscription video {
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  top: 10%;
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%);
+}
+#form-container {
+  position: absolute;
+  background: white;
+  top: 18%;
+  right: 0;
+  padding: 5%;
+}
+
+/*Section INFO*/
