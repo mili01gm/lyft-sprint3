@@ -33,3 +33,33 @@ var city = document.getElementById("city");
 phone.addEventListener("click",function(){
     document.getElementById("on-signup").style.display = "block";
 });
+
+var phoneBlur = function(){
+
+}
+
+phone.onblur = function(){
+  if(phone.value==""){
+    phone.nextElementSibling.style.display = "block";
+  }
+  else if(phone.value.length < 7 || phone.value.length > 9){
+    phone.nextElementSibling.style.display = "block";
+  }
+  else {phone.nextElementSibling.style.display = "none";}
+}
+
+name.onblur = function(){
+  if(name.value==""){
+    name.nextElementSibling.style.display = "block";
+  }
+}
+email.onblur = function(){
+  if(email.value==""){
+    email.nextElementSibling.style.display = "block";
+  }
+}
+city.onblur = function(){
+  if(city.value==""){
+    city.nextElementSibling.style.display = "block";
+  }
+}
