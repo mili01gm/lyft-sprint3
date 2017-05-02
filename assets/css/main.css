@@ -128,6 +128,9 @@ header {
   width: 20px;
   margin: 0;
   display: none;
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
 }
 #form-container button {
   background-color: #FF00BF;

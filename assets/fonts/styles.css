@@ -41,15 +41,15 @@
 .icon-face:before {
   content: "\61";
   color: white;
-  font-size: 4vw;
+  font-size: 2vw;
 }
 .icon-insta:before {
   content: "\62";
   color: white;
-  font-size: 4vw;
+  font-size: 2vw;
 }
 .icon-twitter:before {
   content: "\63";
   color: white;
-  font-size: 4vw;
+  font-size: 2vw;
 }
